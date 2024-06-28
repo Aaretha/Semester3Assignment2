@@ -173,7 +173,7 @@ Initializes the Terraform backend and AWS provider.
 terraform {
   required_version = ">= 0.12"
   backend "s3" {
-    bucket = "your-terraform-state-bucket"
+    bucket = "terraform-state-bucket"
     key    = "path/to/terraform.tfstate"
     region = "us-east-1"
   }
