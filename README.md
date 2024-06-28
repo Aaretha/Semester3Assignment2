@@ -5,7 +5,7 @@ This project outlines how to deploy a static website on AWS using Terraform. The
 ## Prerequisites
 - **AWS Account**: You need an active AWS account to deploy the resources.
 - **Domain name registered in Route 53**: Ensure your domain name is registered and managed by AWS Route 53.
-- **Terraform installed on your local machine**: Install Terraform on your machine. Follow the instructions on the [Terraform website](https://www.terraform.io/downloads.html).
+- **Terraform installed on your local machine**: Install Terraform on your machine.
 
 ## Project Structure
 The project consists of the following Terraform configuration files and directories:
