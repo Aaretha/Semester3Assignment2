@@ -3,9 +3,9 @@
 This project outlines how to deploy a static website on AWS using Terraform. The infrastructure includes an S3 bucket for hosting website files, CloudFront for content delivery, Route 53 for domain name management, IAM roles and policies for security, API Gateway for handling HTTP requests, and SSL certificates for HTTPS.
 
 ## Prerequisites
-- **AWS Account**: You need an active AWS account to deploy the resources.
-- **Domain name registered in Route 53**: Ensure your domain name is registered and managed by AWS Route 53.
-- **Terraform installed on your local machine**: Install Terraform on your machine.
+- **AWS Account**: An active AWS account is needed to deploy the resources.
+- **Domain name registered in Route 53**: Ensure domain name is registered and managed by AWS Route 53.
+- **Terraform installed on your local machine**: Install Terraform on machine.
 
 ## Project Structure
 The project consists of the following Terraform configuration files and directories:
@@ -41,7 +41,7 @@ The project uses modules to organize and reuse code:
    ```
 
 2. **Configure AWS S3 Bucket**
-   Create an S3 bucket to host the static website. This step includes setting up the bucket policy to make it publicly accessible and defining the `index.html` and `error.html` as the default documents.
+   Create an S3 bucket to host the static website. This step includes setting up the bucket policy to make it publicly accessible and defining the `index.html` and `error.html` as the default documents(as per the frst assignment given).
 
 3. **Set Up CloudFront Distribution**
    Create a CloudFront distribution to serve the content from the S3 bucket. This includes configuring the default root object, integrating the SSL certificate for HTTPS, and setting up the origin access identity.
@@ -66,7 +66,8 @@ The project uses modules to organize and reuse code:
    ```
 
 ## Diagram
-![Infrastructure Diagram](s3-static-website.png)
+![infrastructure Diagram](https://github.com/Aaretha/Semester3Assignment2/assets/149208787/392b512c-2599-433f-94f7-debb2a78294c)
+
 
 The diagram above illustrates the infrastructure setup, including the S3 bucket, CloudFront distribution, Route 53 DNS configuration, IAM roles and policies, API Gateway, and SSL certificates.
 
